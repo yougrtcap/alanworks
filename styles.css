@@ -64,6 +64,11 @@ img {
   object-fit: contain;
 }
 
+.brand picture {
+  display: block;
+  flex: 0 0 auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -90,9 +95,14 @@ img {
   box-shadow: 0 18px 36px rgba(31, 41, 55, 0.16);
 }
 
-.hero > img {
+.hero > picture {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero > picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -136,6 +146,11 @@ img {
   padding: 0;
   border-radius: 8px;
   background: #e5e7eb;
+}
+
+.about__image picture {
+  display: block;
+  height: 100%;
 }
 
 .about__image img {
@@ -242,6 +257,11 @@ h2 {
   transition: transform 0.24s ease;
 }
 
+.gallery picture {
+  display: block;
+  height: 100%;
+}
+
 .gallery figure:hover img {
   transform: scale(1.05);
 }
@@ -291,6 +311,44 @@ h2 {
   max-width: 920px;
   margin: 6px auto 0;
   color: #374151;
+}
+
+.plus-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-block: 36px 56px;
+  padding: clamp(32px, 5vw, 56px);
+  border-radius: 12px;
+  color: #f9fafb;
+  background: linear-gradient(135deg, #103426, #1d4b38);
+}
+
+.plus-cta h2 {
+  max-width: 720px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.plus-cta p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: #dbe7df;
+}
+
+.plus-cta__label {
+  color: #c7db77;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.plus-cta .button {
+  flex: 0 0 auto;
+  margin-top: 0;
+  color: #103426;
+  background: #c7db77;
 }
 
 .access {
@@ -371,6 +429,10 @@ h2 {
   height: 40px;
 }
 
+.brand--footer picture {
+  display: block;
+}
+
 .footer p {
   margin: 4px 0;
   color: #9ca3af;
@@ -412,8 +474,14 @@ h2 {
 
   .about,
   .access,
-  .footer {
+  .footer,
+  .plus-cta {
     grid-template-columns: 1fr;
+  }
+
+  .plus-cta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .benefit-grid {

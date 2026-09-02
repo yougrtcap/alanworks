@@ -3,9 +3,13 @@
 This is a static recovery of the public Alan works website, prepared so the
 site can be hosted without depending on the old Vercel/Next.js project.
 
-## Current change
+## Current site
 
 - 1 Day price changed from `500円` to `1,000円`.
+- The canonical public URL is `https://alan-works.net/`.
+- `plus/` and `manabi-ai/` are separate projects and are ignored by this repository.
+- Responsive WebP images are served with the original files as fallbacks.
+- Alanworks Plus is linked at `https://plus.alan-works.net/`.
 
 ## Low fixed-cost hosting options
 
@@ -20,12 +24,12 @@ choose a static host that permits the intended use on its free plan.
 
 The repository includes:
 
-- `CNAME` for `www.alan-works.net`
+- `CNAME` for `alan-works.net`
 - `.nojekyll` to publish files exactly as-is
 - `robots.txt`
 - `sitemap.xml`
 
-Set the GitHub Pages custom domain to `www.alan-works.net`, then configure DNS
+Set the GitHub Pages custom domain to `alan-works.net`, then configure DNS
 in Cloudflare:
 
 - `www` CNAME -> `yougrtcap.github.io`
@@ -36,3 +40,11 @@ in Cloudflare:
 
 Keep the Lolipop mail records in the same Cloudflare DNS zone. The website can
 be hosted on GitHub Pages while mail continues to use Lolipop.
+
+## Google Analytics 4
+
+The analytics loader is disabled until a dedicated measurement ID is set. After
+creating the Alan works GA4 web stream, put its `G-...` ID in the `data-ga-id`
+attribute of the `assets/analytics.js` script tag in `index.html`. Do not reuse
+the Alanworks Plus property and do not add personal information to analytics
+events.

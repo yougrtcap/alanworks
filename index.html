@@ -14,15 +14,44 @@
       content="鹿児島市加治屋町にある自習室。無料Wi-Fi、全席コンセント、PC貸し出しなどを備えています。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.alan-works.net/" />
-    <meta property="og:image" content="https://www.alan-works.net/assets/logo.png" />
+    <meta property="og:url" content="https://alan-works.net/" />
+    <meta property="og:site_name" content="Alan works" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image" content="https://alan-works.net/assets/kagoshima-study-top-1600.webp" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="694" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://alan-works.net/" />
     <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Alan works",
+        "url": "https://alan-works.net/",
+        "image": "https://alan-works.net/assets/kagoshima-study-top-1600.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "892-0846",
+          "addressRegion": "鹿児島県",
+          "addressLocality": "鹿児島市",
+          "streetAddress": "加治屋町1-9 第二柿本寺ビル203",
+          "addressCountry": "JP"
+        },
+        "openingHours": "Mo-Su 09:00-23:00",
+        "sameAs": [
+          "https://www.instagram.com/alan_works01",
+          "https://twitter.com/workspace_alan",
+          "https://plus.alan-works.net/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Alan works トップ">
-        <img src="assets/logo.png" alt="" />
+        <picture><source srcset="assets/logo-96.webp" type="image/webp" /><img src="assets/logo.png" alt="" width="500" height="500" /></picture>
         <span>Alan works</span>
       </a>
       <nav class="nav" aria-label="メインメニュー">
@@ -31,13 +60,17 @@
         <a href="#space">スペース</a>
         <a href="#plan">料金プラン</a>
         <a href="#access">アクセス</a>
-        <a href="https://line.me/R/ti/p/@853xtldq?oat__id=674255">コンタクト</a>
+        <a href="https://plus.alan-works.net/" data-analytics-event="plus_click" data-analytics-destination="header">会員制固定席</a>
+        <a href="https://line.me/R/ti/p/@853xtldq?oat__id=674255" data-analytics-event="line_click" data-analytics-destination="header">コンタクト</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Alan works">
-        <img src="assets/kagoshima-study-top.png" alt="Alan worksのイメージ" />
+        <picture>
+          <source srcset="assets/kagoshima-study-top-800.webp 800w, assets/kagoshima-study-top-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 32px), 1536px" type="image/webp" />
+          <img src="assets/kagoshima-study-top.png" alt="Alan worksの自習スペース" width="1620" height="703" fetchpriority="high" decoding="async" />
+        </picture>
         <div class="hero__overlay"></div>
         <div class="hero__content">
           <h1>Where You Work For Your Future</h1>
@@ -47,14 +80,14 @@
 
       <section class="section about" id="about">
         <div class="about__image">
-          <img src="assets/kagoshima-logo.png" alt="Alan works ロゴ" />
+          <picture><source srcset="assets/kagoshima-logo-250.webp 250w, assets/kagoshima-logo-500.webp 500w" sizes="(max-width: 760px) 70vw, 40vw" type="image/webp" /><img src="assets/kagoshima-logo.png" alt="Alan works ロゴ" width="494" height="469" loading="lazy" decoding="async" /></picture>
         </div>
         <div class="about__text">
           <h2>ABOUT US</h2>
           <p>
             アミュプラザ鹿児島から徒歩7分の鹿児島市加治屋町にある自習室です。自学習を目的とした高校生、大学生、専門学生、資格取得に挑戦する方はお気軽にご活用ください。
           </p>
-          <p>営業時間: AM9:00〜PM23:00</p>
+          <p>営業時間: 9:00〜23:00</p>
           <p>住所: 鹿児島県鹿児島市加治屋町1-9 第二柿本寺ビル203</p>
         </div>
       </section>
@@ -103,22 +136,31 @@
         </p>
         <div class="gallery">
           <figure>
-            <img src="assets/kagoshima-logo.png" alt="Alan works Logo" />
+            <picture><source srcset="assets/kagoshima-logo-250.webp 250w, assets/kagoshima-logo-500.webp 500w" sizes="(max-width: 760px) 100vw, 40vw" type="image/webp" /><img src="assets/kagoshima-logo.png" alt="Alan works Logo" width="494" height="469" loading="lazy" decoding="async" /></picture>
             <figcaption>Logo</figcaption>
           </figure>
           <figure class="wide">
-            <img src="assets/img1.jpeg" alt="自習スペース" />
+            <picture><source srcset="assets/img1-800.webp 800w, assets/img1-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 60vw" type="image/webp" /><img src="assets/img1.jpeg" alt="自習スペース" width="1920" height="1080" loading="lazy" decoding="async" /></picture>
             <figcaption>Study room</figcaption>
           </figure>
           <figure class="wide">
-            <img src="assets/desk-chair-kagoshima.png" alt="自習用個室" />
+            <picture><source srcset="assets/desk-chair-kagoshima-800.webp 800w, assets/desk-chair-kagoshima-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 60vw" type="image/webp" /><img src="assets/desk-chair-kagoshima.png" alt="自習用個室" width="1606" height="803" loading="lazy" decoding="async" /></picture>
             <figcaption>Personal space</figcaption>
           </figure>
           <figure>
-            <img src="assets/top3.jpeg" alt="ワーキングスペース" />
+            <picture><source srcset="assets/top3-480.webp 480w, assets/top3-960.webp 960w" sizes="(max-width: 760px) 100vw, 40vw" type="image/webp" /><img src="assets/top3.jpeg" alt="ワーキングスペース" width="4032" height="3024" loading="lazy" decoding="async" /></picture>
             <figcaption>Study Space</figcaption>
           </figure>
         </div>
+      </section>
+
+      <section class="section plus-cta" aria-labelledby="plus-title">
+        <div>
+          <span class="plus-cta__label">ALANWORKS PLUS</span>
+          <h2 id="plus-title">毎日使える固定席をお探しの方へ</h2>
+          <p>6:00〜24:00利用できる会員制固定席、無料見学、1日体験をご案内しています。</p>
+        </div>
+        <a class="button" href="https://plus.alan-works.net/" data-analytics-event="plus_click" data-analytics-destination="main">Alanworks Plusを見る</a>
       </section>
 
       <section class="section plan" id="plan">
@@ -169,14 +211,14 @@
       <section class="contact">
         <h2>Contact Us</h2>
         <p>ご不明点などお気軽にご連絡ください</p>
-        <a class="button" href="https://line.me/R/ti/p/@853xtldq?oat__id=674255">ご利用希望はこちら</a>
+        <a class="button" href="https://line.me/R/ti/p/@853xtldq?oat__id=674255" data-analytics-event="line_click" data-analytics-destination="contact">ご利用希望はこちら</a>
       </section>
     </main>
 
     <footer class="footer">
       <div>
         <a class="brand brand--footer" href="#top">
-          <img src="assets/logo-clear2.png" alt="" />
+          <picture><source srcset="assets/logo-clear2-96.webp" type="image/webp" /><img src="assets/logo-clear2.png" alt="" width="500" height="500" loading="lazy" decoding="async" /></picture>
           <span>Alan works</span>
         </a>
         <p>〒892-0846</p>
@@ -192,8 +234,10 @@
         <a href="#space">Space</a>
         <a href="#plan">Plan</a>
         <a href="#access">Access</a>
+        <a href="https://plus.alan-works.net/" data-analytics-event="plus_click" data-analytics-destination="footer">Alanworks Plus</a>
       </nav>
       <p class="copyright">© 2022 - Present Pokae LLC. All rights reserved.</p>
     </footer>
+    <script defer src="assets/analytics.js" data-ga-id=""></script>
   </body>
 </html>
