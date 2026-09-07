@@ -538,3 +538,9 @@ h2 {
     height: 240px;
   }
 }
+
+.study-guides ul { max-width: 920px; margin: 0 auto; padding-left: 24px; }
+.study-guides li { margin: 16px 0; }
+.study-guides li a { color: #4338ca; text-decoration: underline; text-underline-offset: 4px; }
+.study-guides > .button { display: flex; width: fit-content; margin: 28px auto 0; }
+.site-header .nav { flex-wrap: wrap; }

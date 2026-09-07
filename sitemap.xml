@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://alan-works.net/</loc>
-    <lastmod>2026-09-02</lastmod>
-  </url>
+  <url><loc>https://alan-works.net/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/kagoshima-study-room-guide/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/kagoshima-chuo-study-room/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/kagoshima-qualification-study/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/kagoshima-university-exam-study/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://alan-works.net/articles/kagoshima-study-room-price/</loc><lastmod>2026-09-08</lastmod></url>
 </urlset>
