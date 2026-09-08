@@ -43,8 +43,16 @@ be hosted on GitHub Pages while mail continues to use Lolipop.
 
 ## Google Analytics 4
 
-The analytics loader is disabled until a dedicated measurement ID is set. After
-creating the Alan works GA4 web stream, put its `G-...` ID in the `data-ga-id`
-attribute of the `assets/analytics.js` script tag in `index.html`. Do not reuse
-the Alanworks Plus property and do not add personal information to analytics
-events.
+The main site uses the dedicated GA4 property `Alan works 本サイト`, web stream
+`Alan works 公式サイト` (measurement ID `G-P9EVTXMH6V`). Its timezone is Japan
+and currency is JPY. The homepage, article index, and five articles carry this ID.
+Alanworks Plus and Recollection retain their separate properties.
+
+`assets/analytics.js` records standard page views and `line_click` / `plus_click`.
+The published canonical URL identifies the originating page; page query strings,
+fragments, and referrer paths are excluded. Google signals and ad personalization
+are disabled. The stream's enhanced automatic measurement is disabled.
+LINE clicks measure navigation intent, not messages sent, friend additions, or contracts.
+
+The homepage includes the Search Console HTML verification tag for the
+`https://alan-works.net/` URL-prefix property. Keep the tag to retain verification.

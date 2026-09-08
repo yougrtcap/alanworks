@@ -544,3 +544,6 @@ h2 {
 .study-guides li a { color: #4338ca; text-decoration: underline; text-underline-offset: 4px; }
 .study-guides > .button { display: flex; width: fit-content; margin: 28px auto 0; }
 .site-header .nav { flex-wrap: wrap; }
+
+.analytics-notice { grid-column: 1 / -1; font-size: .875rem; }
+.analytics-notice a { text-decoration: underline; text-underline-offset: 3px; }
